@@ -1,0 +1,48 @@
+//
+//  CleenPch.pch
+//  CleenTestDeml
+//
+//  Created by 王迪 on 2018/2/24.
+//  Copyright © 2018年 王迪. All rights reserved.
+//
+
+#ifndef CleenPch_pch
+#define CleenPch_pch
+
+#import "ZZUIMacro.h"
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+/** @brief 每页加载数据条数 */
+#define KG_PAGE_SIZE          10
+
+/** @brief 导航栏字体颜色 */
+#define wh_navTitleColor      [UIColor whiteColor]
+
+/** @brief Cell标题颜色 */
+#define wh_TitleColor         wh_RGB(65, 79, 117)
+
+/** @brief 普通字体颜色 */
+#define wh_norFontColor       [UIColor darkGrayColor]
+
+/** @brief 分割线颜色 */
+#define wh_lineColor          wh_RGB(230, 230, 230)
+
+/** @brief 主题色 */
+#define wh_themeColor         wh_RGB(136, 144, 255)
+
+/** @brief 屏幕Size */
+#define KScreenSize           [UIScreen mainScreen].bounds.size
+
+/** @brief 图片默认背景图 */
+#define  PLACE_HOLEDER_IMG    [UIImage imageNamed:@"M_PlaceHolder_Img"]
+
+/** @brief 16进制转UIColor */
+#define wh_RGB(r,g,b)         [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+
+/** @brief 服务器地址 */
+#define kNetBaseURLString     @"http://thoughtworks-ios.herokuapp.com/facts.json"
+
+#define weakSelf(ws)           __weak typeof(self) ws = self;
+
+#endif /* CleenPch_pch */
